@@ -11,7 +11,7 @@
       "dest": "api",
       "includePrivateMembers": true,
       "disableGitFeatures": false,
-      "disableDefaultFilter": false,
+      "disableDefaultFilter": true,
       "noRestore": false,
       "namespaceLayout": "flattened",
       "memberLayout": "samePage",
@@ -45,12 +45,17 @@
     "dest": "_site",
     "globalMetadataFiles": [],
     "fileMetadataFiles": [],
-    "template": [
-      "default",
-      "modern"
-    ],
+    "template": ["default", "templates/singulinkfx"],
     "postProcessors": [],
     "keepFileLink": false,
     "disableGitFeatures": false
+  },
+  "pdf": {
+    "content": [{
+      "files": [ "**/*.{md,yml}" ]
+    }],
+    "wkhtmltopdf": {
+      "additionalArguments": "--enable-local-file-access"
+    }
   }
 }
