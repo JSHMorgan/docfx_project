@@ -11,7 +11,7 @@
       "dest": "api",
       "includePrivateMembers": true,
       "disableGitFeatures": false,
-      "disableDefaultFilter": true,
+      "disableDefaultFilter": false,
       "noRestore": false,
       "namespaceLayout": "flattened",
       "memberLayout": "samePage",
